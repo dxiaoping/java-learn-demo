@@ -25,8 +25,29 @@ public class leetCode {
     //P     I
 
     @Test
-    public void arrangeZ(){
-        String s = "ABCDEFGHIJKLMN";
-        System.out.println("xiao");
+    public void arrangeZ() {
+        int rows = 3;
+        char[][] arr = new char[rows][20];
+        int col = 0;
+        int row = 0;
+        String s = "ABCDEFGHIJKLMNOPQ";
+        int charCount = 0;
+        System.out.println(s.length());
+        while (charCount < s.length()) {
+            if (col % rows == 0 && row < rows-1) {
+                arr[row++][col] = s.charAt(charCount++);
+            }else if (row == rows - 1 || col % rows != 0) {
+                arr[row--][col++] = s.charAt(charCount++);
+            }else {
+                arr[row++][col++] = s.charAt(charCount++);
+            }
+        }
+
+        for (row = 0; row < rows; row++) {
+            for (col = 0; col < arr[row].length; col++){
+                System.out.println(arr[row][col]);
+            }
+            System.out.println();
+        }
     }
 }

@@ -9,5 +9,5 @@ import lombok.Data;
  */
 @Data
 public class TempObject {
-    private int num;
+    private int num = 1;
 }
