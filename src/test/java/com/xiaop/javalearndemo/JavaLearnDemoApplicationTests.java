@@ -1,4 +1,4 @@
-package com.zm.javalearndemo;
+package com.xiaop.javalearndemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

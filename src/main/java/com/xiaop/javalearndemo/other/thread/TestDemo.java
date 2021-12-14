@@ -1,7 +1,6 @@
-package com.zm.javalearndemo.other.thread;
+package com.xiaop.javalearndemo.other.thread;
 
-import com.zm.javalearndemo.other.templateobject.TempObject;
-import org.junit.Test;
+import com.xiaop.javalearndemo.other.templateobject.TempObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,8 +10,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @Tile: NTS20110100148  广州一体化项目Oracle环境测试、问题修复
- * @Author: xiaoping.duan 医保研发5部 CN32219
+ * @Tile:
+ * @Author: xiaoping.duan
  * @Date 2021/3/3
  */
 public class TestDemo {

@@ -8,7 +8,7 @@
         <version>2.4.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.zm</groupId>
+    <groupId>com.xiaop</groupId>
     <artifactId>java-learn-demo</artifactId>
     <version>1.0.0</version>
     <name>java-learn-demo</name>

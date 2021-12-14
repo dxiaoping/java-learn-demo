@@ -1,10 +1,10 @@
-package com.zm.javalearndemo.other;
+package com.xiaop.javalearndemo.other;
 
 import org.junit.Test;
 
 /**
- * @Tile: NTS20110100148  广州一体化项目Oracle环境测试、问题修复
- * @Author: xiaoping.duan 医保研发5部 CN32219
+ * @Tile:
+ * @Author: xiaoping.duan
  * @Date 2021/2/18
  */
 public class leetCode {

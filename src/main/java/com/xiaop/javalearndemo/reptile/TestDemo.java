@@ -1,4 +1,4 @@
-package com.zm.javalearndemo.reptile;
+package com.xiaop.javalearndemo.reptile;
 
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
@@ -16,8 +16,8 @@ import us.codecraft.webmagic.processor.PageProcessor;
 import java.io.IOException;
 
 /**
- * @Tile: NTS20110100148  广州一体化项目Oracle环境测试、问题修复
- * @Author: xiaoping.duan 医保研发5部 CN32219
+ * @Tile:
+ * @Author: xiaoping.duan
  * @Date 2021/3/4
  */
 public class TestDemo {
@@ -28,6 +28,7 @@ public class TestDemo {
     public void demo() throws IOException {
         //要爬取的网站
         String url = "https://588ku.com/gif1/47400.html";
+        url = "http://www.jd.com";
         //获得一个和网站的链接，注意是Jsoup的connect
         Connection connect = Jsoup.connect(url);
         //获得该网站的Document对象
