@@ -1,6 +1,7 @@
 package com.xiaop.javalearndemo.other.thread;
 
 import com.xiaop.javalearndemo.other.templateobject.TempObject;
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,7 +18,36 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class TestDemo {
 
     Logger logger = LoggerFactory.getLogger(TestDemo.class);
+    int num = 0;
 
+    @Test
+    public void volatileTest() throws InterruptedException {
+        Thread th1 = new Thread(
+                ()->{
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    num++;}
+        );
+        Thread th2 = new Thread(
+                ()->{
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    num++;}
+        );
+        th1.start();
+        th2.start();
+        logger.info("volatileNum:{}",num);
+        logger.info("volatileNum:{}",num);
+        th1.join();
+        th2.join();
+        logger.info("volatileNum:{}",num);
+    }
 //    @Test
     public void demo1(){
         Runnable runnable = () -> {

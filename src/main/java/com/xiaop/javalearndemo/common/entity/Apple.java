@@ -22,7 +22,7 @@ public class Apple {
 
     /**
      * <hr><blockquote><pre>
-     *     对象属性
+     * 对象属性
      * 颜色*/
     private String color;
 
