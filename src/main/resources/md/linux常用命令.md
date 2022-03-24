@@ -6,6 +6,8 @@ mysql 修改密码：https://blog.csdn.net/fannyoona/article/details/106203748
 
 服务器文件上传：https://www.cnblogs.com/yellowgg/p/11686050.html
 
+linux环境变量配置:
+
 nacos启动：https://blog.csdn.net/cww2010/article/details/117535607 ./startup.sh -m standalone
 ###redis常用命令：
 * redis连接命令： redis-cli -h xxx.xxx.xx.x -p 6376
